@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+	<div class="row">
+		<h1 id="heading1">Query Generation</h1>
+		<p id="text1">Please read the following paragraphs and come up with a search term that you would use to find
+			information relevant to that topic.&nbsp;</p>
+		<hr>
+
+	</div>
+	<form method="POST">
+		<div class="row" style="background-color: #032429;">
+			<p id="text2">{{ query_1 }}</p>
+			<span>
+				<input class="basic-slide" for="Q1" id="input1" name="query_1" contenteditable="true"
+					placeholder="Enter Query" required /> <label for="name">Query:</label>
+			</span>
+			<hr>
+		</div>
+
+		<div class="row" style="background-color: #032429;">
+			<p id="text2">{{ query_2 }}</p>
+			<span>
+				<input class="basic-slide" for="Q2" id="input2" name="query_2" contenteditable="true"
+					placeholder="Enter Query" required /> <label for="name">Query:</label>
+			</span>
+			<hr>
+		</div>
+
+		<div class="row" style="background-color: #032429;">
+			<p id="text2">{{ query_3 }}</p>
+			<span>
+				<input class="basic-slide" for="Q3" id="input3" name="query_3" contenteditable="true"
+					placeholder="Enter Query" required /> <label for="name">Query:</label>
+			</span>
+			<hr>
+		</div>
+
+		<div class="row" style="background-color: #032429;">
+			<p id="text2">{{ query_4 }}</p>
+			<span>
+				<input class="basic-slide" for="Q4" id="input4" name="query_4" contenteditable="true"
+					placeholder="Enter Query" required /> <label for="name">Query:</label>
+			</span>
+			<hr>
+		</div>
+
+		<div class="row" style="background-color: #032429;">
+			<p id="text2">{{ query_5 }}</p>
+			<span>
+				<input class="basic-slide" for="Q5" id="input5" name="query_5" contenteditable="true"
+					placeholder="Enter Query" required /> <label for="name">Query:</label>
+			</span>
+			<hr>
+		</div>
+
+		<div class="row" style="background-color: #032429; text-align: left;">
+			<span>
+				<p id="text5">The colour check that you are about to take part in is very simple, when asked for you
+					favourite
+					colour you must select "{{ random_attention }}". This is an attention check. </p>
+				<input type="radio" name="attention_1" id="option1" value="red" required> Red </input><br>
+				<input type="radio" name="attention_1" id="option2" value="blue"> Blue </input><br>
+				<input type="radio" name="attention_1" id="option3" value="green"> Green </input><br>
+				<input type="radio" name="attention_1" id="option2" value="orange"> Orange </input><br>
+				<input type="radio" name="attention_1" id="option3" value="brown"> Brown </input><br>
+			</span>
+			<hr>
+		</div>
+
+		<div class="row" style="background-color: #032429;">
+			<span>
+				<input type="submit" value="Do more queries" name="refresh_button">
+				<input type="submit" value="Finshed" name="redirect_button">
+			</span>
+		</div>
+	</form>
+</body>
+
+</html>

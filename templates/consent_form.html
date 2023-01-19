@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Information Sheet</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+    <div class="row" style="background-color: #032429;">
+        {% autoescape false %}
+        <p>
+        <h2>
+            Study title: Enron Sensitivity Aware Search Test Collection<br>
+            Jack McKechnie, j.mckechnie.1@research.gla.ac.uk<br>
+        </h2>
+        Please confirm to indicate that you have read and understood the information about the study provided
+        earlier and that any questions you might have about the study have been answered. Please tick the box to
+        indicate your agreement.<br>
+
+        <ul>
+            <li>I confirm that I have read and understood the Information Sheet, understand my Data Protection rights
+                under
+                GDPR for the above study, and have had the opportunity to ask questions.</li>
+            <li>I understand that all data collected from me will be collected anonymously, and if published, will not
+                be
+                identifiable as coming from me.</li>
+            <li>I understand that participation in this study is voluntary and I may withdraw consent at any time for
+                any
+                reason. If requested, the data will be deleted.</li>
+            <li>I agree to immediately raise any concerns or areas of discomfort during the study.
+                The researchers are allowed to archive all data captured from the experiment in online repositories.
+            </li>
+            <li>I am aware that I can get in touch with the researchers at any time to demand the deletion or retrieval
+                of
+                my responses.</li>
+            <li>I agree to participate in the study conducted by Jack McKechnie at the University of Glasgow entitled
+                “Enron
+                Sensitivity Aware Search Test Collection”.</li>
+            <ul>
+
+                This study has been approved by the Ethics Committee (Reference number: XXXXX)
+
+                I have read and understood the above, and I consent to participate in this experiment:
+                </p>
+                {% endautoescape %}
+
+                <form method="post">
+                    <input type="checkbox" name="checkbox" value="checked" required> Continue
+                    <input type="submit" value="Submit">
+                </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Information Sheet</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+    <div class="row" style="background-color: #032429;">
+        {% autoescape false %}
+        <p>
+            <hr>
+        <h2>
+            Thank you for completing the task. Please click this button to be returned to Prolific.<br>
+            <form method="post">
+                <input type="submit" value="Finished">
+            </form>
+        </h2>
+        <hr>
+        Enron Sensitivity Aware Search Test Collection <br>
+
+        Participant Debrief <br>
+
+        Jack McKechnie (jack.mckechnie.1@research.gla.ac.uk) <br> <br>
+
+        <b>What is the Enron email collection?</b><br>
+
+        This study makes use of the Enron email collection. Enron was an American energy company
+        founded in 1985. The company went bankrupt in 2001 and was involved in a number of different
+        scandals at the time. As part of investigations into the company, the Federal Energy Regulatory
+        Commision publicly released the emails of employees - the Enron email collection.<br>
+
+        <b>Purpose of the study</b><br>
+
+        The purpose of this project is to gather data to create a test collection to be used in the development
+        of search systems that can protect information that is sensitive, whilst still providing relevant
+        information. To do this we need to collect queries that users would enter into a search engine to find
+        information on a topic and to collect judgements of how relevant a document is to a topic.<br>
+
+        <b>Why was I chosen?</b><br>
+
+        You were chosen to participate in this project as you are a user of the Prolific crowdsourcing
+        platform, you have meet the minimum requirements (aged 16 or older and a native English speaker),
+        and you have chosen to complete the task. Participation is completely voluntary and you are free to
+        withdraw your participation at any point. Your data will be destroyed on request.<br>
+
+        <b>Conditions and data storage</b><br>
+
+        The data that is collected is completely anonymous
+        and there is no way to track any piece of data back to you. The complete test collection, including
+        your responses, may appear in published studies in a confidential format where anonymity is
+        preserved. The completed collection, including your responses, will be publicly available.<br>
+
+        <b>Data usage</b><br>
+
+        The data will be made publicly available and may be used in other research projects.<br>
+
+        <b>Who has reviewed the study?</b><br>
+
+        The study has adheres to the ESRC Framework for Research Ethics and has been approved by the
+        College of Science and Engineering ethics committe of the University of Glasgow (Reference number:
+        XXXX).<br>
+
+        <b>Contact</b><br>
+
+        You are free to contact the researcher if you have any questions about the project but if you would
+        prefer to speak to someone that is not involved in the project then you can contact the Ethics
+        Committee (Julie.Williamson@glasgow.ac.uk). Contact details for those involved in the project are as
+        follows:<br>
+
+        Jack McKechnie | PhD student | j.mckechnie.1@research.gla.ac.uk<br>
+
+        Dr Graham McDonald | Project supervisor | graham.mcdonald@glasgow.ac.uk<br>
+
+        Prof. Craig Macdonald | Project supervisor | craig.macdonald@glasgow.ac.uk<br>
+
+        <b>Data protection and confidentiality</b><br>
+
+        Your data will be held in accordance with General Data Protection Regulation 2016. All information
+        held is strictly anonymous, you are only referred to by a user identification number. All electronic data
+        will be stored on a password-protected computer and the completed collection will be made publicly
+        available. Your consent will be kept seperate from your responses.<br>
+
+
+
+        Thank you for volunteering to take part.<br>
+        </p>
+        {% endautoescape %}
+    </div>
+</body>
+
+</html>

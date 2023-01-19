@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Information Sheet</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+    <div class="row" style="background-color: #032429;">
+        {% autoescape false %}
+        <p>
+        <h2>
+            Enron Sensitivity Aware Search Test Collection <br>
+
+            Participant Information Sheet <br>
+
+            Jack McKechnie (jack.mckechnie.1@research.gla.ac.uk) <br> <br>
+        </h2>
+
+
+        <b> Eligibility criteria </b> <br>
+
+        In order to take part in this study you must meet the following requirements: <br>
+
+        - Aged 16 or older <br>
+        - English is your first language <br>
+
+        <b>Invitation</b> <br>
+
+        You are invited to participate in a research study. Your participation is completely voluntary. Before
+        beginning, please take some time to read this document to learn why this study is being carried out
+        and what is expected of you. If you have any questions or concerns please contact us using the
+        information below. <br>
+
+        <b>What is the Enron email collection?</b><br>
+
+        This study makes use of the Enron email collection. Enron was an American energy company
+        founded in 1985. The company went bankrupt in 2001 and was involved in a number of different
+        scandals at the time. As part of investigations into the company, the Federal Energy Regulatory
+        Commision publicly released the emails of employees - the Enron email collection.<br>
+
+        <b>Purpose of the study</b><br>
+
+        The purpose of this project is to gather data to create a test collection to be used in the development
+        of search systems that can protect information that is sensitive, whilst still providing relevant
+        information. To do this we need to collect queries that users would enter into a search engine to find
+        information on a topic and to collect judgements of how relevant a document is to a topic.<br>
+
+        <b>What will I have to do if I take part?</b><br>
+
+        You will be presented with a consent form before the experiment starts. After you have provided your
+        consent, you will complete a short (approximately 10 minute) online task. This is one of two things:<br>
+
+        1) You will be presented with a short paragraph that describes a topic that you would like to find
+
+        information about. You are asked to then provide a query that you would enter into a search
+        engine in order to find out information about this topic.<br>
+
+        2) You will be presented with a query and a document. You are asked to read through the
+
+        document thoroughly and then judge how relevant that document is to the query that was
+        provided.<br>
+
+        You will be paid at the rate of approximately £9/hour.<br>
+
+        <b>Are there any risks?</b><br>
+
+        There are no significant known risks to you in participating in this project. Reading the documents may
+        cause some slight fatigue. In this case please take a break, step away from the computer for a while,
+        and come back to the task when you feel ready.<br>
+
+
+
+        <b>Why have I been chosen?</b><br>
+
+        You have been chosen to participate in this project as you are a user of the Prolific crowdsourcing
+        platform, you have meet the minimum requirements (aged 16 or older and a native English speaker),
+        and you have chosen to complete the task. Participation is completely voluntary and you are free to
+        withdraw your participation at any point. Your data will be destroyed on request.<br>
+
+        <b>Conditions and data storage</b><br>
+
+        Participation will take approximately 10 minutes. The data that is collected is completely anonymous
+        and there is no way to track any piece of data back to you. The complete test collection, including
+        your responses, may appear in published studies in a confidential format where anonymity is
+        preserved. The completed collection, including your responses, will be publicly available.<br>
+
+        <b>Data usage</b><br>
+
+        The data will be made publicly available and may be used in other research projects.<br>
+
+        <b>Who has reviewed the study?</b><br>
+
+        The study has adheres to the ESRC Framework for Research Ethics and has been approved by the
+        College of Science and Engineering ethics committe of the University of Glasgow (Reference number:
+        XXXX).<br>
+
+        <b>Funding and contact</b><br>
+
+        You are free to contact the researcher if you have any questions about the project but if you would
+        prefer to speak to someone that is not involved in the project then you can contact the Ethics
+        Committee (Julie.Williamson@glasgow.ac.uk). Contact details for those involved in the project are as
+        follows:<br>
+
+        Jack McKechnie | PhD student | j.mckechnie.1@research.gla.ac.uk<br>
+
+        Dr Graham McDonald | Project supervisor | graham.mcdonald@glasgow.ac.uk<br>
+
+        Prof. Craig Macdonald | Project supervisor | craig.macdonald@glasgow.ac.uk<br>
+
+        <b>Data protection and confidentiality</b><br>
+
+        Your data will be held in accordance with General Data Protection Regulation 2016. All information
+        held is strictly anonymous, you are only referred to by a user identification number. All electronic data
+        will be stored on a password-protected computer and the completed collection will be made publicly
+        available. Your consent will be kept seperate from your responses.<br>
+
+
+
+        Thank you for volunteering to take part.<br>
+        </p>
+        {% endautoescape %}
+
+        <form action='/redirect' method='GET'>
+            <span>
+                Finished reading? Enter your Prolific ID to continue:
+                <input type="text" name="input_box" required>
+                <input type="submit" value="Submit">
+            </span>
+        </form>
+        
+    </div>
+</body>
+
+</html>
